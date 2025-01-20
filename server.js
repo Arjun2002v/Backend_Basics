@@ -5,7 +5,7 @@ const PORT = 1919;
 console.log("Server starting...");
 
 // Initial data
-let data = ["Raj"];
+let data = ["Raj", "oIoi"];
 
 // Middleware to parse JSON data from the request body
 app.use(express.json());
@@ -43,10 +43,11 @@ app.post("/api", (req, res) => {
   }
 });
 
+// DELETE route to receive data and update it (DELETE request)
 app.delete("/api", (req, res) => {
   res.sendStatus(201);
-  const del = req.body;
-  data.pop(del);
+  data.pop();
+  console.log("Deleted ");
 });
 
 // Start the server

@@ -11,4 +11,8 @@ Content-Type: application/json
     "name" :"Arjun"
 }
 
+### Delete Function
+
+DELETE  http://localhost:1919/api
+
 
