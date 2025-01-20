@@ -1,0 +1,14 @@
+### Test1 Api
+
+GET http://localhost:1919/api
+
+### Post Function
+
+POST  http://localhost:1919/api
+Content-Type: application/json
+
+{
+    "name" :"Arjun"
+}
+
+
