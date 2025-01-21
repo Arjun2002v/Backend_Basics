@@ -35,6 +35,7 @@ app.post("/api", (req, res) => {
   const entry = req.body;
 
   if (entry === "null") {
+    // to check for the empty body
     res.sendStatus(404);
   } else {
     res.sendStatus(201);
